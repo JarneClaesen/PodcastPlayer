@@ -1,0 +1,13 @@
+ADD:
+var newPodcast = Podcast(title: 'New Podcast', episodes: [/*...episodes...*/]);
+PodcastService.addPodcast(newPodcast);
+
+RETRIEVE:
+List<Podcast> podcasts = await PodcastService.getPodcasts();
+
+UPDATE:
+podcast.title = 'Updated Title';
+PodcastService.updatePodcast(podcast);
+
+DELETE:
+PodcastService.deletePodcast(podcast.id);
